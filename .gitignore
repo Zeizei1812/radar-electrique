@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[oc]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Données et logs : jamais dans git (les données propres vivent sur la branche `data`)
+data/raw/*
+data/clean/*
+!data/raw/.gitkeep
+!data/clean/.gitkeep
+logs/*
+!logs/.gitkeep
+
+# Secrets et réglages locaux
+.env
+.streamlit/secrets.toml
+
+# Système / éditeurs
+.DS_Store
+.vscode/
+.idea/
